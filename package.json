@@ -1,3 +1,8 @@
+"scripts": {
+  "preinstall": "rm -rf node_modules package-lock.json",
+  "build": "npm install && npm run build"
+}
+
 {
   "name": "todo-list",
   "private": true,
