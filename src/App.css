@@ -1,0 +1,170 @@
+
+.removeItem , .closeItemAddBox {
+  position: absolute;
+  right: -5px;
+  top: -8px;
+  padding: 5px;
+  background: white;
+  border-radius: 50%;
+  width: 15px;
+  display: flex
+;
+  height: 15px;
+  justify-content: center;
+  align-items: center;
+  color: #ff0a0a;
+  cursor: pointer;
+transition: all 0.3s ease;
+}
+
+
+.closeItemAddBox {
+  display: none;
+}
+
+span.removeItem:hover {
+  background: #ff0000;
+  color: white;
+}
+
+.itemList, .itemAddBox {
+  width: 48%;
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 15px;
+  color: black;
+  margin: 1%;
+  height: 369px;
+}
+
+
+
+.addItemForm {
+  display: flex
+;
+  flex-direction: column;
+  gap: 10px;
+  width: 50%;
+  margin: auto;
+}
+
+
+
+.taskData {
+  width: 100%;
+}
+
+.taskList {
+  display: flex
+  ;
+      width: 95%;
+      gap: 12px;
+      background: #ffffff40;
+      padding: 20px 0px;
+      border-radius: 10px;
+      align-items: center;
+      position: relative;
+      margin: 10px;
+
+}
+
+.taskContainer {
+  background: #05012b;
+  color: white;
+  overflow-y: scroll;
+}
+
+
+
+.taskContainer::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+.taskContainer::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px white; 
+  border-radius: 2px;
+}
+ 
+/* Handle */
+.taskContainer::-webkit-scrollbar-thumb {
+  background: blue; 
+  border-radius: 2px;
+}
+
+/* Handle on hover */
+.taskContainer::-webkit-scrollbar-thumb:hover {
+  background: #b30001;
+  cursor:grab;
+}
+
+button.mobileAddItemButton {
+  display: none;
+}
+
+
+@media screen and (max-width: 800px){
+  .container{
+    margin: 0;
+  }
+
+  .itemAddBox {
+    display: none;
+}
+
+.taskContainer{
+  width: 100%;
+}
+
+div#root{
+  padding: 50px 8px;
+}
+
+.popAddItem{
+  position: absolute;
+  width: 100%;
+  z-index: 9;
+  display: flex
+;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: #474747b5;
+  backdrop-filter: blur(4px);
+}
+
+.addItemForm {
+  width: 75%;
+}
+
+button.mobileAddItemButton {
+  display: block;
+  width: 120px;
+  background: green;
+
+}
+
+.mainBody {
+  display: flex
+;
+  flex-direction: column;
+}
+
+
+.closeItemAddBox{
+  display: block;
+}
+
+.formContainer {
+  position: relative;
+  width:80%;
+  background: WHITE;
+  BOX-SHADOW: 0PX 0PX 11PX 0px;
+  PADDING: 20PX 0px;
+  border-radius: 20px;
+}
+
+}
